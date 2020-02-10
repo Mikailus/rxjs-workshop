@@ -1,0 +1,30 @@
+<div class="card shadow-sm rounded p-1 mb-3 border-light" [@simpleFadeAnimation]="'in'">
+  <img class="card-img-top" src="../../assets/images/rxjs/default.jpg">
+  <div class="card-body">
+    <h5 class="card-title font-weight-bold">{{ exercise.title }}</h5>
+    <p class="card-text">{{ exercise.description }}</p>
+    <p class="card-text">W tym celu</p>
+    <ol>
+      <li>
+        Skopiuj pliki z poprzedniego zadania
+      </li>
+      <li>
+        Korzystając z <i>ReactiveForms</i> spraw, aby wszystkie pola związane z wiekiem przyjaciół były inputami.
+      </li>
+      <li>
+        Główny komponent ma być informowany o każdej zmianie poszczególnego inputa, pod warunkiem, że zmiana nie zaszła w okresie krótszym niż 1 sekunda.
+        Główny komponent ma wiedzieć u kogo zmiana zaszła (id) i jaka wartość się pojawiła.
+      </li>
+      <li>
+        Następnie niech główny komponent wysyła tę informację do wstrzykniętego serwisu. Nazwa metody w serwisie to <i>postData</i>.
+      </li>
+    </ol>
+
+    <div class="mt-5">
+      <h5 class="card-title font-weight-bold">Wynik zadania</h5>
+      <div class="px-3">
+        <ng-template result></ng-template>
+      </div>
+    </div>
+  </div>
+</div>

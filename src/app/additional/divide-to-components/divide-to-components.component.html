@@ -1,0 +1,34 @@
+<div class="card shadow-sm rounded p-1 mb-3 border-light" [@simpleFadeAnimation]="'in'">
+  <img class="card-img-top" src="../../assets/images/rxjs/default.jpg">
+  <div class="card-body">
+    <h5 class="card-title font-weight-bold">{{ exercise.title }}</h5>
+    <p class="card-text">{{ exercise.description }}</p>
+    <p class="card-text">W tym celu</p>
+    <ol>
+      <li>
+        Skopiuj pliki z poprzedniego zadania
+      </li>
+      <li>
+        Dokonaj podziału na komponenty:
+        <ul>
+          <li>
+            komponent główny, posiadający dane
+          </li>
+          <li>
+            komponent wyświetlający poszczególne elementy z listy danych
+          </li>
+          <li>
+            komponent wyświetlający poszczególne elementy z listy <i>friends</i>
+          </li>
+        </ul>
+      </li>
+    </ol>
+
+    <div class="mt-5">
+      <h5 class="card-title font-weight-bold">Wynik zadania</h5>
+      <div class="px-3">
+        <ng-template result></ng-template>
+      </div>
+    </div>
+  </div>
+</div>

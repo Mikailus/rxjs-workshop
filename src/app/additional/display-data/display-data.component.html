@@ -1,0 +1,40 @@
+<div class="card shadow-sm rounded p-1 mb-3 border-light" [@simpleFadeAnimation]="'in'">
+  <img class="card-img-top" src="../../assets/images/rxjs/default.jpg">
+  <div class="card-body">
+    <h5 class="card-title font-weight-bold">{{ exercise.title }}</h5>
+    <p class="card-text">{{ exercise.description }}</p>
+    <p class="card-text">W tym celu</p>
+    <ol>
+      <li>
+        <p>stwórz nowy komponent w katalogu <i>your-works</i>. Możesz do tego użyć polecenia</p>
+        <pre>
+          <code>
+            ng g c nazwa_komponentu
+          </code>
+        </pre>
+        <p>
+          będąc w tym katalogu.
+        </p>
+      </li>
+      <li>
+        Dodaj klasę komponentu do pola <i>component</i> odpowiedniego zadania w pliku <i>exercises.ts</i>.
+      </li>
+      <li>
+        Wstrzyknij serwis  <i>DataService</i> do komponentu (pamiętaj o dodaniu go do tablicy providers!)
+      </li>
+      <li>
+        Pobierz dane, korzystając z metody <i>getData</i> wstrzykniętego serwisu.
+      </li>
+      <li>
+        Wyświetl dane w wybranej przez siebie postaci w szablonie HTML. Wynik pojawi się poniżej.
+      </li>
+    </ol>
+
+    <div class="mt-5">
+      <h5 class="card-title font-weight-bold">Wynik zadania</h5>
+      <div class="px-3">
+        <ng-template result></ng-template>
+      </div>
+    </div>
+  </div>
+</div>
